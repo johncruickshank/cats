@@ -4,7 +4,9 @@ var addCats = function() {
     {name: "Charlie", faveFood: "people's limbs", image: "./images/charlie.jpg"},
     {name: "Boba", faveFood: "sock fluff", image: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"},
     {name: "Barnaby", faveFood: "tuna", image: "https://68.media.tumblr.com/88d0fcf2b84a7b098dda839130597569/tumblr_okuo4teiql1uhevdso1_1280.jpg"},
-    {name: "Max", faveFood: "Whiskas Temptations", image: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"}
+    {name: "Max", faveFood: "Whiskas", image: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"},
+    {name: "Keyboard Cat", faveFood: "catnip", image: "https://media.giphy.com/media/10RhccNxPSaglW/giphy.gif"},
+    {name: "Shaq Cat", faveFood: "salmon", image: "https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif"}
   ];
 
   for (var i = 0; i < catArray.length; i++) {
@@ -36,7 +38,8 @@ var createCatImage = function(image) {
   var pic = document.createElement("img");
   element.appendChild(pic);
   pic.src = image;
-  pic.width = 500;
+  pic.width = 300;
+  pic.height = 300;
   return element;
 };
 
